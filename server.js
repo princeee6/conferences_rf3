@@ -17,7 +17,10 @@ app.get("/", (req, res) => {
     <a href="/dashboard">мои заявки</a></br>`);
 });
 app.get("/about", (req, res) => {
-  res.send("о нас");
+  res.render("about", {
+    title: "О нас",
+    description: "Мы предоставляем помещения для аренды в Челябинске",
+  });
 });
 app.get("/contact", (req, res) => {
   res.send("контакты");

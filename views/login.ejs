@@ -1,0 +1,15 @@
+<h1><%= title %></h1>
+
+<% if (errors.lenght) { %>
+    <ul>
+        <% errors.forEach(e => { %>
+        <li><%= e %></li>
+        <% }) %>
+    </ul>
+<% } %>
+
+<form method="POST" action="/login">
+<input name="login" placeholder="логин"><br>
+<input name="password" type="password" placeholder="пароль"><br>
+<button>создать пользователя</button>
+</form>

@@ -10,11 +10,11 @@
 <h1><%= title %></h1>
 <p>Пользователь: <%= user.fio %></p>
 
-<% if (requests && requests.length) { %>
-  <h2>
-    <% requests.forEach(req => { %>
-      <h3><%= req.room_name %> — <%= req.status %></h3>
-    <% }); %>
-    </h2>
+<% if (requests?.length) { %>
+  <% requests.forEach(req => { %>
+    <div><%= req.room_name %> — <%= req.status %></div>
+  <% }); %>
+<% } else { %>
+  <div>Заявок нет</div>
 <% } %>
 

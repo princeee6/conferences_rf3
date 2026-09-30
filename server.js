@@ -69,6 +69,7 @@ app.post("/register", (req, res) => {
     номер: ${req.body.number}<br>
     емайл: ${req.body.email}<br>
     пароль: ${req.body.password}<br>
+    город: ${req.body.city}<br>
   `);
 });
 app.listen(PORT, () => {

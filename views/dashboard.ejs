@@ -1,4 +1,4 @@
-<!-- <h1><%= title %></h1>
+<%- include('header', { title: 'Вход' }) %>
 
 <% if (requests.lenght) { %>
     <ul>
@@ -17,4 +17,4 @@
 <% } else { %>
   <div>Заявок нет</div>
 <% } %>
-
+<%- include('footer') %>
